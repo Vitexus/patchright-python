@@ -1,0 +1,32 @@
+Source: patchright
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-pip,
+Standards-Version: 4.7.0
+Homepage: https://github.com/Kaliiiiiiiiii-Vinyzu/patchright-python
+Vcs-Git: https://github.com/Vitexus/patchright-python.git
+Vcs-Browser: https://github.com/Vitexus/patchright-python
+Rules-Requires-Root: no
+
+Package: python3-patchright
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-greenlet (>= 3.1.1),
+ python3-pyee (>= 13.0.0),
+Description: Undetected Python version of the Playwright automation library
+ Patchright is a patched version of the Playwright testing and automation
+ library, designed to be undetected by bot-detection systems.
+ .
+ It provides the same API as Playwright for browser automation with
+ Chromium, Firefox, and WebKit browsers.
+ .
+ After installation, run: patchright install chromium
+ .
+ This package provides the Python 3 library.
