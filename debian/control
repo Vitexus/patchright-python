@@ -18,8 +18,8 @@ Architecture: all
 Depends:
  ${misc:Depends},
  ${python3:Depends},
- python3-greenlet (>= 3.1.1),
- python3-pyee (>= 13.0.0),
+ python3-greenlet,
+ python3-pyee,
 Description: Undetected Python version of the Playwright automation library
  Patchright is a patched version of the Playwright testing and automation
  library, designed to be undetected by bot-detection systems.
